@@ -1,19 +1,21 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
-import Header from './components/header'
-import Subheader from './components/subHeader'
+import {connect} from 'react-redux';
+import Posts from './components/posts'
+import Albums from './components/albums'
+import Users from './components/users'
 
 class App extends Component {
-
-
     render() {
         return (
             <div>
-                <Header/>
-                <Subheader/>
+                <Posts />
+                <hr/>
+                <Albums />
+                <hr/>
+                <Users />
             </div>
         );
     }
 }
 
-export default App;
+export default connect()(App);

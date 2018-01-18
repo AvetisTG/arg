@@ -1,6 +1,10 @@
 import { combineReducers } from 'redux'
-import subHeaderItems from './subHeader-reduser'
+import albums from './albums-reducer'
+import users from './users-reducer'
+import posts from './post-reducer'
 
 export default combineReducers({
-    subHeaderItems
+    albums,
+    users,
+    posts
 })
